@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project ORA1: HTML, CSS & responsible framework</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-top" bis_skin_checked="1">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large" style="padding: 8px;" bis_skin_checked="1">
+            <a class="w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"
+                onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="https://soict.hust.edu.vn/" target="_blank" class="w3-button w3-theme-l1">
+                <img src="./images/image_hust.png" alt="Logo" style="height: 36px;">
+            </a>
+            <a href="#subject" class="w3-header-item w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn
+                học</a>
+            <a href="#technologies" class="w3-header-item w3-bar-item w3-button w3-hide-small w3-hover-white">Các công
+                nghệ web</a>
+            <a href="#information" class="w3-header-item w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin
+                sinh viên</a>
+        </div>
+    </div>
+    <div style="width: 250px;" class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 style="text-align: center;"><b>Menu</b></h4>
+        <ul
+            style="display: flex; flex-direction: column ; align-items: center; justify-content: center; list-style: none; margin: 0px; padding: 0px; width: 100%;">
+            <li class="w3-bar-item w3-button w3-hover-black" style="text-align: center;">
+                <a href="#subject" class="w3-bar-item w3-button w3-hover-black"
+                    style="text-decoration: none; color: inherit;">Thông tin môn học</a>
+            </li>
+            <li class="w3-bar-item w3-button w3-hover-black" style="text-align: center;">
+                <a class="w3-bar-item w3-button w3-hover-black" style="text-decoration: none; color: inherit;"
+                    href="#technologies">Các công nghệ web</a>
+            </li>
+            <li class="w3-bar-item w3-button w3-hover-black" style="text-align: center;">
+                <a class="w3-bar-item w3-button w3-hover-black" style="text-decoration: none; color: inherit;"
+                    href="#information">Thông tin sinh viên</a>
+            </li>
+        </ul>
+    </div>
+    <div class="w3-main" style="margin-left:250px; margin-top: 40px" bis_skin_checked="1">
+        <div style="padding: 0px 20px;" id="subject" class="w3-row w3-padding-64" bis_skin_checked="1">
+            <div class="w3-twothird w3-container" bis_skin_checked="1">
+                <h1 style="text-align: center" class="w3-text-teal w3-title-infocourse">THÔNG TIN HỌC PHẦN</h1>
+                <h2 class="w3-text-teal" style="font-weight: 600">Công nghệ Web và Dịch vụ trực tuyến</h2>
+                <h2 class="w3-text-teal" style="font-style: italic;">Mã học phần: IT4409</h2>
+                <ul style="list-style-type: none; padding: 0px; margin: 0px;">
+                    <li>
+                        <strong>Khối lượng: </strong> 3(2-2-0-6)
+                    </li>
+                    <li>
+                        <strong>Học phần tiên quyết: </strong> Không (None)
+                    </li>
+                    <li>
+                        <strong>Học phần học trước (Pre-courses): </strong> (IT3090 hoặc/or IT3091) và/and (IT3100
+                        hoặc/or IT3600)
+                    </li>
+                    <li>
+                        <strong>Học phần song hành (Corequisite Courses): </strong> Không (None)
+                    </li>
+                </ul>
+                <p>
+                    <strong>Mục tiêu:</strong> Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển các
+                    ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên có khả
+                    năng:
+                </p>
+                <p>● Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho các lĩnh vực khác
+                    nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử (eCommerce,
+                    eLearning, eGoverment,...)</p>
+                <p>● Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</p>
+                <p>Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ cần
+                    thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.</p>
+                <p>
+                    <strong>Objectives:</strong> The course provides students with the necessary knowledge to build and
+                    develop online applications and services on the web environment. After completing this couse,
+                    students are able to:
+                </p>
+                <ul>
+                    <li>Use a programming language such as JSP, PHP to develop web applications for different areas such
+                        as content management system (CMS), portal, or online applications (eCommerce, eLearning,
+                        eGoverment, ...)</li>
+                    <li>Understand the popular web technologies, platforms, frameworks.</li>
+                </ul>
+                <p>
+                    In addition, the course also provides students with skills of teamwork and presentation, and
+                    attitudes needed to work and apply the techniques in software projects and companies in the future.
+                </p>
+            </div>
+            <div class="w3-third w3-container" bis_skin_checked="1">
+                <figure style="border: 1px; padding: 4px; border-color: gray; border-style: solid">
+                    <a href="https://soict.daotao.ai/courses/course-v1:EdTech+Ed001+2022/about" target="_blank">
+                        <img src="https://soict.daotao.ai/asset-v1:EdTech+Ed001+2022+type@asset+block@pasted_image_0.png" alt="Quảng cáo" style="width:100%; height:auto; border-radius: 20px;">
+                    </a>
+                    <figcaption style="text-align: center; margin-top: 10px;">Khóa học Python - Django - Oscar - Xblock</figcaption>
+                </figure>
+                <figure style="border: 1px; padding: 4px; border-color: gray; border-style: solid">
+                    <a href="https://soict.daotao.ai/" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.jt9cORWiJr663_fDfRVMgwHaDt?rs=1&pid=ImgDetMain"
+                            alt="Quảng cáo" style="width:100%; height:auto; border-radius: 20px;">
+                    </a>
+                    <figcaption style="text-align: center; margin-top: 10px;">MOOC daotao.ai</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div style="padding: 0px 20px;" id="technologies" class="w3-row" bis_skin_checked="1">
+            <div class="w3-twothird w3-container" bis_skin_checked="1">
+                <h1 style="text-align: center" class="w3-text-teal w3-title-infocourse">CÁC CÔNG NGHỆ WEB</h1>
+                <img src="https://soict.daotao.ai/asset-v1:SoICT+IT4409+HoangPH+type@asset+block@banner-72.jpg" alt="Hình ảnh môn học" style="width:100%; height:auto; margin-top: 20px;">
+
+                <h2 class="w3-text-teal">HTML</h2>
+                <p>HTML là viết tắt của HyperText Markup Language, là một ngôn ngữ đánh dấu cho các tài liệu web. HTML
+                    được sử dụng để định nghĩa cấu trúc của một trang web, bao gồm các phần tử như tiêu đề, đoạn văn,
+                    hình ảnh, liên kết, v.v. HTML là một ngôn ngữ lập trình web cơ bản và bắt buộc phải học nếu bạn muốn
+                    trở thành một lập trình viên web.</p>
+                <h2 class="w3-text-teal">CSS</h2>
+                <p>CSS là viết tắt của Cascading Style Sheets, là một ngôn ngữ định dạng cho các tài liệu web. CSS được
+                    sử dụng để định dạng bố cục, màu sắc, phông chữ, kích thước, v.v. của các phần tử HTML. CSS là một
+                    công nghệ quan trọng giúp cho các trang web trở nên đẹp mắt và chuyên nghiệp hơn.</p>
+                <h2 class="w3-text-teal">JAVASCRIPT</h2>
+                <p>JavaScript là một ngôn ngữ lập trình kịch bản được sử dụng để thêm tính tương tác cho các trang web.
+                    JavaScript cho phép chúng ta tạo các hiệu ứng động, các trò chơi, các ứng dụng web, v.v. JavaScript
+                    là một công nghệ quan trọng giúp cho các trang web trở nên sinh động và hấp dẫn hơn.</p>
+            </div>
+            <div class="w3-third w3-container" bis_skin_checked="1">
+                <figure style="border: 1px; padding: 4px; border-color: gray; border-style: solid">
+                    <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT3190+2020-2/about" target="_blank">
+                        <img src="https://soict.daotao.ai/asset-v1:SoICT+IT3190+2020-2+type@asset+block@banner-49.jpg" alt="Quảng cáo" style="width:100%; height:auto; border-radius: 20px;">
+                    </a>
+                    <figcaption style="text-align: center; margin-top: 10px;">
+                        Khóa học Nhập môn học máy và khai phá dữ liệu 
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <div style="padding: 0px 20px;" id="information" class="w3-row w3-padding-64" bis_skin_checked="1">
+            <div class="w3-twothird w3-container" bis_skin_checked="1">
+                <h3 style=" text-align: center ; margin-top: 10px; font-size: 32px; color: #009688; font-weight: bold;">
+                    THÔNG TIN SINH VIÊN
+                </h3>
+                <div
+                    style="text-align: center; justify-content: center; align-items: center; display: flex; flex-direction: column;">
+                    <img src="./images/ava.jpg" alt="Ảnh cá nhân"
+                        style="width:250px; margin-top: 15px; height:auto; float:left; margin-right: 20px; border-radius: 20px;">
+                    <span style="margin-top: 20px;">
+                        <strong>Họ và tên: </strong> Nguyễn Duy Khánh
+                        <br><br>
+                        <strong>MSSV: </strong> 20225019
+                        <br><br>
+                        <strong>Email: </strong> Khanh.ND225019@sis.hust.edu.vn
+                        <br><br>
+                        <strong>Lớp chuyên ngành: </strong> Khoa học máy tính 07 - K67
+                        <br><br>
+                        <strong>Kinh nghiệm: </strong> Thông thạo ngôn ngữ lập trình Java
+                        <br><br>
+                        <strong>Sở thích: </strong>Không có
+                    </span>
+                </div>
+            </div>
+            <div class="w3-third w3-container" bis_skin_checked="1">
+                <figure style="border: 1px; padding: 4px; border-color: gray; border-style: solid">
+                    <a href="https://soict.daotao.ai/courses/course-v1:SoICT+IT4015+TungBT/about" target="_blank">
+                        <img src="https://soict.daotao.ai/asset-v1:SoICT+IT4015+TungBT+type@asset+block@banner-25.jpg" alt="Quảng cáo" style="width:100%; height:auto; border-radius: 20px;">
+                    </a>
+                    <figcaption style="text-align: center; margin-top: 10px;">Khóa học Nhập môn ATTT</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="w3-center " bis_skin_checked="1">
+            <div class="w3-bar" bis_skin_checked="1">
+                <a class="w3-button w3-black" href="#">1</a>
+
+                <a class="w3-button w3-hover-black" href="#">»</a>
+            </div>
+        </div>
+        <footer style="margin-top: 20px;" id="myFooter" >
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <nav class="inner-socials">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/khanhnd0112" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/home" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/khnh.mini_04/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@khanhnguyenduy2211" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <span style="display: flex;">
+                        <strong style="align-self: center;">Email: </strong>
+                        <p style="margin-left: 10px;"> Khanh.ND225019@sis.hust.edu.vn</p>
+                    </span>
+                    <strong>Điện thoại:</strong> <a href="tel:0328873260" class="w3-hover-opacity">0328-873-260</a><br>
+                    <strong>Địa chỉ:</strong> Số 1 Đại Cồ Việt, Bách Khoa, Hai Bà Trưng, Hà Nội, Việt Nam
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <p>© Copyright: KND - 2024.2 - Project ORA1</p>
+                        <div style="display: flex; flex-direction: row; align-items: center;">
+                            <a href="#subject" class="w3-hover-opacity"
+                                style="padding: 8px; text-decoration: none; color: orange;">Thông tin môn học</a> |
+                            <a href="#technologies" class="w3-hover-opacity"
+                                style="padding: 8px; text-decoration: none; color: orange;">Các công nghệ web</a> |
+                            <a href="#information" class="w3-hover-opacity"
+                                style="padding: 8px; text-decoration: none; color: orange;">Thông tin sinh viên</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./test.js"></script>
+</body>
+
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var menuItems = document.querySelectorAll(".w3-bar-item");
+
+        menuItems.forEach(item => {
+            item.addEventListener("click", function () {
+                menuItems.forEach(btn => btn.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    });
+
+    var mySidebar = document.getElementById("mySidebar");
+    var overlayBg = document.getElementById("myOverlay");
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+</script>

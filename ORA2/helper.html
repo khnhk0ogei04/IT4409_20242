@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hướng dẫn định vị nội dung trên trang Contents</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 4px;
+    }
+    .example {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hướng dẫn định vị nội dung trên trang Contents</h1>
+
+  <p>Trang <strong>Contents</strong> sử dụng hệ thống lưới (grid) để bố trí các thành phần nội dung. Mỗi mục nội dung được định vị bằng cách xác định các thông số sau:</p>
+
+  <ul>
+    <li><code>startCol</code>: Cột bắt đầu (tính từ 1)</li>
+    <li><code>endCol</code>: Cột kết thúc (không bao gồm cột này)</li>
+    <li><code>startRow</code>: Hàng bắt đầu (tính từ 1)</li>
+    <li><code>endRow</code>: Hàng kết thúc (không bao gồm hàng này)</li>
+  </ul>
+
+  <p>Ví dụ, để đặt một mục nội dung từ cột 1 đến cột 5 và từ hàng 1 đến hàng 8:</p>
+
+  <pre><code>{
+  startCol: 1,
+  endCol: 5,
+  startRow: 1,
+  endRow: 8
+}</code></pre>
+    
+    Có tối đa 12 cột trong lưới để chỉnh sửa, không giới hạn số hàng. Các mục nội dung có thể chồng lên nhau nếu không được định vị chính xác.
+</body>
+</html>

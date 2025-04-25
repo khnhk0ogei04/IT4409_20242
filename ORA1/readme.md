@@ -1,0 +1,1 @@
+Chỉnh sửa các file ảnh, file thông tin ở phần Information và Footer
