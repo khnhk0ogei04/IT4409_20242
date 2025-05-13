@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gmail Client Application</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.5/tinymce.min.js" referrerpolicy="no-referrer"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    tinymce.init({
+      selector: '#email-message',
+      height: 300,
+      menubar: false,
+      plugins: [
+        'advlist autolink lists link image charmap print preview anchor',
+        'searchreplace visualblocks code fullscreen',
+        'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+      'bold italic backcolor | alignleft aligncenter ' +
+      'alignright alignjustify | bullist numlist outdent indent | ' +
+      'removeformat | help',
+    });
+  });
+</script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <h1 class="title-app">GMAIL CLIENT APPLICATION</h1>
+  </header>
+
+  <h2 class="info-exercise">ORA3 - 20242 - 157519</h2>
+  <img class="logo-hust" src="./img.png" alt="Logo" />
+
+  <main class="main-content">
+    <!-- Login Section -->
+    <div class="login-container">
+      <h3>Login with Google Account now</h3>
+      <button id="btn_signin" class="login-button" onclick="handleAuthClick()">Đăng nhập</button>
+    </div>
+
+    <!-- Main App Section -->
+    <div id="mail-container" style="display: none;">
+      <div class="app-body">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <button id="btn_mail" class="menu-btn btn-mail" onclick="hop_thu()">Hộp thư</button>
+          <button id="btn_sendmail" class="menu-btn btn-sendmail" onclick="soan_thu()">Soạn thư</button>
+          <button id="btn_signout" class="menu-btn btn-signout" onclick="handleSignoutClick()">Đăng xuất</button>
+        </aside>
+
+        <!-- Main content -->
+        <section class="mail-view">
+          <div id="hop_thu" class="mail-list"></div>
+          <div id="soan_thu" style="display: none;">
+            <form>
+              <label>To:</label>
+              <input type="email" id="input_to" name="email-to" /><br />
+              <label>Subject:</label>
+              <input type="text" id="email-subject" name="email-subject" /><br />
+              <label class="attachment-label">Attachments:</label>
+              <input type="file" id="email-attachment" name="email-attachment" multiple />
+              <div id="file-list" class="file-info"></div>
+              <label>Message:</label>
+              <textarea id="email-message" name="email-message"></textarea><br />
+              <button class="menu-btn btn-sendmail" onclick="sendEmail(event)">Send Email</button>
+            </form>
+          </div>
+
+          <div id="detail" style="display: none;">
+            <div class="email-header">
+              <h2 id="subject_text" class="email-subject"></h2>
+              <div class="email-info">
+                <div class="sender-info">
+                  <img id="sender-avatar" class="avatar" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp" alt="Avatar">
+                  <div class="sender-details">
+                    <span id="sender-name" class="sender-name"></span>
+                    <span id="sender-email" class="sender-email"></span>
+                  </div>
+                </div>
+                <div class="email-time-container">
+                  <span id="email-date" class="email-date"></span>
+                </div>
+              </div>
+            </div>
+            <div id="detail_text" class="email-body"></div>
+            <button style="display: block" class="menu-btn" onclick="returnMail()">Quay lại</button>
+          </div>
+          <button id="more" class="menu-btn btn-show-mail" onclick="showMoreMail()">Xem thêm</button>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 by <span>Khánh Nguyễn Duy</span></p>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/khanhnd0112" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/khnh.mini_04/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@khanhnguyenduy2211" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/home" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f1f3f4;
+  color: #202124;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header */
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Info and logo */
+h2.info-exercise {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.logo-hust {
+  display: block;
+  height: 150px;
+  margin: 40px 0px;
+  object-fit: contain;
+}
+
+/* Login container */
+.login-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 15px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #2e7d32;
+}
+
+/* Mail layout after login */
+#mail-container {
+  display: flex;
+  min-height: auto;
+  max-height: none;
+  margin: 20px;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Sidebar (left panel) */
+#menu {
+  background-color: white;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+#menu button {
+  padding: 12px;
+  font-size: 15px;
+  background-color: #e8f0fe;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#menu button:hover {
+  background-color: #d2e3fc;
+}
+
+#content {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.mail_element {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mail_element:hover {
+  background-color: #f1f3f4;
+}
+
+.mail_element pre {
+  margin: 0;
+  font-weight: bold;
+  width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mail_element p {
+  margin: 0;
+  flex: 1;
+  color: #5f6368;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+#hop_thu,
+#soan_thu,
+#detail {
+  display: none;
+}
+
+#hop_thu.active,
+#soan_thu.active,
+#detail.active {
+  display: block;
+}
+
+#soan_thu, #detail {
+  margin-top: 20px;
+}
+
+#email-message {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#btn_send, #return {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btn_send:hover, #return:hover {
+  background-color: #155ab6;
+}
+
+.sidebar {
+  display: flex;
+  gap: 20px; 
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.menu-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hộp thư - màu xám */
+.btn-mail {
+  background-color: #6c757d;
+}
+
+.btn-mail:hover {
+  background-color: #5a6268;
+}
+
+/* Soạn thư - màu xanh */
+.btn-sendmail {
+  background-color: #28a745;
+}
+
+.btn-sendmail:hover {
+  background-color: #218838;
+}
+
+/* Đăng xuất - màu đỏ */
+.btn-signout {
+  background-color: #dc3545;
+}
+
+.btn-signout:hover {
+  background-color: #c82333;
+}
+
+.btn-show-mail {
+  background-color: #007bff;
+}
+
+.btn-show-mail:hover {
+  background-color: #0069d9;
+}
+
+
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #e0e0e0;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 20px;
+  clear: both;
+}
+
+.footer-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-content span {
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #555;
+  margin: 0 15px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1a73e8;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-view {
+  height: auto;
+  min-height: 200px;
+  overflow-y: visible;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #5f6368;
+  white-space: nowrap;
+  min-width: 60px;
+  text-align: right;
+}
+
+#hop_thu {
+  height: auto;
+  min-height: 200px;
+  width: 100%;
+}
+
+/* Styling cho trang chi tiết email */
+#detail {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  padding: 20px;
+  width: 100%;
+}
+
+.email-header {
+  border-bottom: 1px solid #f1f3f4;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.email-subject {
+  font-size: 22px;
+  font-weight: normal;
+  color: #202124;
+  margin-bottom: 16px;
+}
+
+.email-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sender-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sender-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #202124;
+}
+
+.sender-email {
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.email-date {
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.email-body {
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #202124;
+  overflow-wrap: break-word;
+}
+
+.email-body pre {
+  white-space: pre-wrap;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#email-attachment {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+#email-attachment:hover {
+  border-color: #1a73e8;
+  cursor: pointer;
+}
+
+.attachment-label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.file-info {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.return-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #f1f3f4;
+  color: #5f6368;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.return-button:hover {
+  background-color: #e8eaed;
+}
+
